@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
         <title>Mi App</title>
         <style>
           body {
-            background: #0f172a;
+            background: #113079;
             color: white;
             display: flex;
             justify-content: center;
