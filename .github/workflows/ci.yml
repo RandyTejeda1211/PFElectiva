@@ -33,7 +33,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build imagen
-      run: docker build -t TU-USUARIO/mi-app:latest .
+      run: docker build -t yosoyret/practicafinal:latest .
 
     - name: Push imagen
-      run: docker push TU-USUARIO/mi-app:latest
+      run: docker push yosoyret/practicafinal:latest
