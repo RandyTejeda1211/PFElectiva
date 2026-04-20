@@ -17,11 +17,14 @@ jobs:
       with:
         node-version: 18
 
-    - name: Instalar dependencias
-      run: npm install
+    - name: Instalar dependencias limpio
+      run: npm ci
+
+    - name: Dar permisos a jest
+      run: chmod +x node_modules/.bin/jest
 
     - name: Ejecutar tests
-      run: npx jest
+      run: node node_modules/jest/bin/jest.js
 
     - name: Login Docker Hub
       uses: docker/login-action@v2
